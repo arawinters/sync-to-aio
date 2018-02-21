@@ -1,6 +1,6 @@
 # Sync to AIO script
-A convenient little script to let me kick off a hive-frontend build on a local feature branch
-and deploy it to an aio. preferably without any manual intervention.
+A convenient little script to let me kick off a maven based build on a local feature branch
+and deploy it to an remote environment. preferably without any manual intervention.
 
 pass the -h flag to get a full list of options.
 ```bash
@@ -21,6 +21,7 @@ npm install cli-spinner commander maven node-notifier pom-parser promise-sftp ss
 node hm-webapp/src/main/scripts/sync-to-aio/sync.js -s
 ```
 Please, do not include the --save or --save-dev options when doing the dependency install above.
+By default, this script is located some five levels deep inside the parent project(from where maven is executed). You'll most likely have to change that if this is being used on something other than what it was originally written for. 
 
 ## Usage:
 build/transfer/backup/xplode using settings specified in deployment-config.json

@@ -14,15 +14,7 @@ go to the root of the script(this directory). to run the script from the package
 npm install
 node sync -h
 ```
-the script can also be run from the parent project root as well, but you'll have to install the dependencies manually. to
-do that you can do:
-```bash
-npm install cli-spinner commander maven node-notifier pom-parser promise-sftp ssh2  
-node hm-webapp/src/main/scripts/sync-to-aio/sync.js -s
-```
-Please, do not include the --save or --save-dev options when doing the dependency install above.
-
-By default, this script is located some five levels deep inside the parent project(from where maven is executed). You'll most likely have to change that if this is being used on something other than what it was originally written for. 
+By default, this script is located some five levels deep inside the parent project(from where maven is executed). You'll most likely have to change that if this is being used on something other than what it was originally written for. Might be a good starting point, or code snippet so I'm gonna leave this here.
 
 ## Usage:
 build/transfer/backup/xplode using settings specified in deployment-config.json

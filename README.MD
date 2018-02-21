@@ -21,6 +21,7 @@ npm install cli-spinner commander maven node-notifier pom-parser promise-sftp ss
 node hm-webapp/src/main/scripts/sync-to-aio/sync.js -s
 ```
 Please, do not include the --save or --save-dev options when doing the dependency install above.
+
 By default, this script is located some five levels deep inside the parent project(from where maven is executed). You'll most likely have to change that if this is being used on something other than what it was originally written for. 
 
 ## Usage:

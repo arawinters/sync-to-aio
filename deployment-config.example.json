@@ -1,0 +1,9 @@
+{
+	"type": "sftp",
+	"host": "10.16.139.277",
+	"username": "user",
+	"password": "thisIsaP@55W0rD",
+	"port": 22,
+	"remotePath": "/var/data/www",
+	"uploadOnSave": false
+}
